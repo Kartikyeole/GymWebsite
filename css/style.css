@@ -40,7 +40,7 @@ header .logo a{
 	font-weight: 700;
 }
 header .logo a span{
-	color:#c11325;
+	color:	;
 }
 header .nav{
 	position: fixed;
@@ -144,7 +144,7 @@ header .ham-burger.active span:nth-child(2){
 /*Home section*/
 .home{
 	height: 100vh;
-	background-image: url('../images/home.jpg');
+	background-image: url('../images/home1.jpg');
 	background-size: cover;
 	padding:15px;
 	-webkit-display: flex;
@@ -201,6 +201,7 @@ header .ham-burger.active span:nth-child(2){
 .about{
 	padding:80px 0px;
 	background-color:#ffffff;
+	display: none;
 }
 
 .about .content{ 
@@ -234,11 +235,12 @@ header .ham-burger.active span:nth-child(2){
  text-transform: capitalize;
   text-align: center;
 }
-.about .content .box .inner .text p{
+.about .content .box .inner .text li,p{
 	font-size: 15px;
 	line-height:20px;
+	
 	color:#ffffff;
-	text-align: center;
+	text-align: left;
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -710,26 +712,26 @@ header .ham-burger.active span:nth-child(2){
 
 
 
-/*Contact Section*/
+/*Current Section*/
 
-.contact{
+.Current{
 	padding:80px 0px;
 	background-color: #222222;
 }
 
-.contact .content{
+.Current .content{
 	-webkit-display: flex;
 	display: flex;
 }
 
-.contact .content .box{
+.Current .content .box{
 	flex:0 0 50%;
 	max-width: 50%;
 	padding: 15px;
 }
 
-.contact .content .form input,
-.contact .content .form textarea{
+.Current .content .form input,
+.Current .content .form textarea{
  height: 45px;
  width: 100%;
  padding:6px 12px;
@@ -739,19 +741,19 @@ header .ham-burger.active span:nth-child(2){
  font-family: 'Open-sans',sans-serif;
  color:#ffffff;
 }
-.contact .content .form input:focus,
-.contact .content .form textarea:focus{
+.Current .content .form input:focus,
+.Current .content .form textarea:focus{
  outline: none;
 }
-.contact .content .form input::placeholder,
-.contact .content .form textarea::placeholder{
+.Current .content .form input::placeholder,
+.Current .content .form textarea::placeholder{
 	color:#ffffff;
 }
-.contact .content .form textarea{
+.Current .content .form textarea{
 	height: 100px;
 }
 
-.contact .content .form button{
+.Current .content .form button{
 	border:none;
 	outline: none;
 	box-shadow: none;
@@ -764,19 +766,19 @@ header .ham-burger.active span:nth-child(2){
 	transition: all .5s ease;
 	cursor: pointer;
 }
-.contact .content .form button:hover{
+.Current .content .form button:hover{
 	background-color:transparent;
 	color:#ffffff; 
     border-color:#ffffff;
 }
 
-.contact .content .text h2{
+.Current .content .text h2{
 	font-size: 30px;
     font-weight: 500;
     color: #c11325;
     padding: 0px 0px 20px;
 }
-.contact .content .text p{
+.Current .content .text p{
     font-size: 15px;
     line-height: 20px;
     color: #ffffff;
@@ -785,13 +787,13 @@ header .ham-burger.active span:nth-child(2){
     font-family: 'Open-sans', sans-serif;
 }
 
-.contact .content .text .info ul{
+.Current .content .text .info ul{
 	list-style: none;
 	padding:0;
 	margin:0;
 }
 
-.contact .content .text .info li{
+.Current .content .text .info li{
 	display: block;
 	margin-bottom: 15px;
 	color:#ffffff;
@@ -801,7 +803,7 @@ header .ham-burger.active span:nth-child(2){
 	padding-left: 40px;
 	font-family: 'Open-Sans',sans-serif;
 }
-.contact .content .text .info li span{
+.Current .content .text .info li span{
 	display: inline-block;
 	position: absolute;
 	left:0px;
@@ -809,10 +811,10 @@ header .ham-burger.active span:nth-child(2){
 	font-size: 20px;
 	color:#c11325;
 }
-.contact .content .text .social {
+.Current .content .text .social {
 	padding-top: 30px;
 }
-.contact .content .text .social a{
+.Current .content .text .social a{
 	height: 40px;
 	width: 40px;
 	line-height: 40px;
@@ -825,17 +827,17 @@ header .ham-burger.active span:nth-child(2){
     border:1px solid transparent;
 } 
 
-.contact .content .text .social a:hover{
+.Current .content .text .social a:hover{
 	background-color: transparent;
     border-color: #ffffff;
 }
 
-.contact .content .text .social a span{
+.Current .content .text .social a span{
 	color:#ffffff;
 	font-size: 20px;
 }
 
-.contact .content .text .copy{
+.Current .content .text .copy{
 	border-top:1px solid #333333;
 	margin-top: 30px;
 	padding-top: 20px;
@@ -923,10 +925,10 @@ flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
 }
-.contact .content{
+.Current .content{
 	flex-wrap: wrap;
 }
-.contact .content .box {
+.Current .content .box {
     flex: 0 0 100%;
     max-width: 100%;
 }
@@ -939,4 +941,44 @@ flex: 0 0 100%;
   }
 }
 
+
+
+.search-bar {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	height: 6%;
+	background-color: #fff;
+	border-radius: 20px;
+	margin: 10px;
+	padding-left: 10px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.search-bar input[type="text"] {
+	flex: 1;
+	border: none;
+
+	font-size: 18px;
+	margin-left: 5px;
+	outline: none;
+}
+
+.search-icon {
+	color: #aaa;
+	background-color: #ffffff;
+	position: absolute;
+	right: 4%;
+	font-size: 20px;
+	margin-left: 10px;
+	cursor: pointer;
+	border: none;
+}
+
+.search-icon:hover {
+	color: #333;
+}
 
